@@ -1,0 +1,6 @@
+#Ignoring folders
+node_modules/
+pub/
+.parcel-cache/
+
+#Ignoring files

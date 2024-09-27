@@ -1,0 +1,33 @@
+{
+  "name": "dt208g_moment2",
+  "version": "1.0.0",
+  "description": "Moment 2 in DT208G",
+  "main": "main.js",
+  "scripts": {
+    "test": "\"echo Hello World!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinnEriksson89/DT208G_Moment2.git"
+  },
+  "author": "Linn Eriksson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinnEriksson89/DT208G_Moment2/issues"
+  },
+  "homepage": "https://github.com/LinnEriksson89/DT208G_Moment2#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.62.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-typescript-babel": "^1.0.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cli": "^3.0.0",
+    "typescript": "^5.5.4"
+  }
+}

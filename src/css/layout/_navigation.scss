@@ -1,0 +1,39 @@
+/* DT208G - Programmering i TypeScript
+ * Moment 2
+ * Linn Eriksson, VT24
+ */
+
+//Layout for navigation.
+nav {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+
+
+    //Give links in the list the illusion of being buttons.
+    ul {
+        background: $theme-secondary-color;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            
+            padding: $general-padding;
+            margin: 0;
+            border: 2px solid $theme-secondary-color;
+
+            a {
+                text-decoration: none;
+                color: $theme-primary-color;
+            }
+        }
+
+        li:hover, .current {
+            background: $theme-primary-color;
+            a {
+                color: $theme-secondary-color;
+            }
+        }
+    }
+}

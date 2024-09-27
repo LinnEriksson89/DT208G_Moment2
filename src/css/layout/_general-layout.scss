@@ -1,0 +1,60 @@
+/* DT208G - Programmering i TypeScript
+ * Moment 2
+ * Linn Eriksson, VT24
+ */
+
+//General layout of page.
+
+//Background color.
+body {
+    background: $light-primary-color;
+    background: url("../images/background.jpg") repeat;
+}
+
+#wrapper {
+    background: $light-primary-color;
+    background: url("../images/background.jpg") repeat;
+}
+
+main {
+    background: $theme-primary-color;
+    padding: 1%;
+}
+
+
+//Layout for larger screens.
+@media only screen and (min-width: $screen-min-width) {
+
+    //Using grid on wrapper
+    #wrapper {
+        display: grid;
+        column-gap: 5px;
+        grid-template-columns: 200px 500px auto auto;
+
+        header {
+            grid-area: 1 / 2 / auto / span 2;
+        }
+
+        nav {
+            grid-area: 2 / 1 / auto / span 1;
+
+            //Navigation buttons stays in place when scrolling.
+            ul {
+                position: sticky;
+                top: 25px;
+            }
+        }
+
+        main {
+            grid-area: 2 / 2 / auto / span 2;
+        }
+
+        footer {
+            grid-area: 3 / 2 / auto / span 2;
+        }
+    }
+
+    main {
+        padding: $general-padding;
+    }
+}
